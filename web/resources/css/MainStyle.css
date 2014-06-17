@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15.06.2014, 23:45:19
+    Author     : Jeff
+*/
+
+
+* {
+    font-family: sans-serif;
+}
+
+hr {
+    
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width:920px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+header {
+    background-color: lightblue;
+    height: 100px;
+}
+
+footer {
+    background-color: lightblue;
+    height: 100px;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+#politiker {
+    width: 920px;
+}

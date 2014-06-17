@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15.06.2014, 23:55:46
+    Author     : Jeff
+*/
+
+#menu {padding:0; margin:0; list-style:none; height:29px; position:relative; z-index:500; font-family:arial, verdana, sans-serif;}
+#menu a {border-right: 1px solid #EAEAEA; border-left: 1px solid #EAEAEA;}
+#menu li {float:left; margin-right:1px;}
+#menu li a {display:block; float:left; height:29px; line-height:29px; background:transparent; color:#909090; text-decoration:none; font-size:10pt; padding:0 30px 0 20px;border-bottom: 1px solid #EAEAEA;}
+
+#menuwrapper {border-bottom: 1px solid #EAEAEA;background-color: #909090;width: 100%;background-image: url(/images/loginStatusBkgd.png);background-repeat: repeat-x;height: 29px;font-size: 10pt;}
+
+#menu table {border-collapse:collapse; width:0; height:0; position:absolute; top:0; left:0;}
+
+/* Default link styling */
+
+/* Style the list OR link hover. Depends on which browser is used */
+
+#menu li a:hover {z-index:200; position:relative;color:White; background-color:#365F91;}
+#menu li:hover {position:relative; z-index:200;}
+
+#menu ul.sub li a{border-top: 1px solid #EAEAEA;border-bottom: 1px solid #fff;}
+
+#menu li:hover > a {color:White; background:#365F91;}
+#menu li:hover > a.sub {color:White; background-color:#365F91;}
+
+#menu li a.sub {background: transparent; color: black; background-image: url(/images/down-arrow.gif);background-repeat: no-repeat;background-position: right center;}
+
+#menu :hover ul {left:0; top:29px; width:220px; background:#365F91;color:White;}
+
+/* keep the 'next' level invisible by placing it off screen. */
+#menu ul,
+#menu :hover ul ul {position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
+
+#menu :hover ul :hover ul {left:120px; top:-1px; background:#365F91; white-space:nowrap; width:100px; z-index:200; height:auto;}
+
+#menu :hover ul li {margin:0; border-left: 1px solid #EAEAEA;}
+#menu :hover ul li a {width:150px; padding:0; text-indent:10px; background:White; color:black; height:29px; line-height:29px;}
+#menu :hover ul li a.fly {background: White; color: black; background-image: url(/images/right-arrow.gif);background-repeat: no-repeat;background-position: right center;}
+
+#menu :hover ul :hover {background-color:#365F91; color:White;}
+#menu :hover ul :hover a.fly {background-color:#365F91; color:White;}
+
+#menu :hover ul :hover ul li a {width:150px; padding:0; text-indent:10px; background:White; color:black;}
+#menu :hover ul :hover ul :hover {background-color:#365F91; color:White;}
